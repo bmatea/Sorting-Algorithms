@@ -1,0 +1,259 @@
+body {
+    font-family: 'Alice';
+    margin: 0;
+    color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.selection-box {
+    padding: 80px 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 25px;
+    line-height: 2em;
+    margin: 0;
+}
+
+.title-underline {
+    width: 150px;
+    height: 3px;
+    background-color: #06263F;
+    display: block;
+    margin: 6px auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #06263F;
+    padding: 16px 0;
+    z-index: 2;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #EC5051;
+    margin: 0;
+    padding: 0 12px;
+    font-size: 32px;
+    line-height: 2em;
+    display: inline-block;
+}
+header .nav-links {
+    text-decoration: none;
+    color: #EC5051;
+    font-size: 20px;
+    padding: 0 1em;
+    font-weight: 600;
+}
+
+#cover img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#cover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cover-text h1 {
+    font-size: 90px;
+    line-height: 2em;
+    font-family: "Alice";
+    margin: 8px 0;
+    color: #DCBE9A;
+}
+
+#cover-text small {
+    font-size: 50px;
+    font-family: "Sacramento";
+    display: block;
+    margin: 8px 0;
+    color: #DCBE9A;
+    font-weight: 700;
+}
+
+#alg-section nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#alg-section nav a {
+    text-decoration: none;
+    color: #EC5051;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+#alg-section nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 14px 50px 0px black;
+    border-radius: 10px;
+}
+footer {
+    max-width: 1500px;
+    padding: 0;
+}
+#footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #06263F;
+    color: #DCBE9A;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#social-media-list {
+    padding: 0;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+#footer-box ul a {
+    color: #DCBE9A;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#kontakt form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 500px;
+    justify-content: space-between;
+    margin: 40px auto;;
+}
+
+input, textarea {
+    padding: 8px 14px;
+    margin: 4px 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "Alice";
+}
+
+label {
+    color: #EC5051;
+    font-family: "Sacramento";
+    font-weight: 600;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 20px;
+    font-family: "Alice";
+    font-size: 20px;
+    background-color: #EC5051;
+    color: #fafafa;
+    padding: 7px 0;
+}
+button:hover {
+    box-shadow: 5px 11px 10px 0px rgba(0, 0, 0, 0.541);
+    transform: translateY(-5px);
+}
+
+#alg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+#alg-container article {
+    align-self: center;
+    padding-bottom: 5px;
+}
+
+.one-alg-box p {
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+}
+
+#side-menu {
+    visibility: hidden;
+    width: 0;
+    height: calc(100vh-95px);
+    top: 95px;
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+    background:  #EC5051;
+    position: fixed;
+    z-index: 3;
+    transition: ease-in-out 0.3s all;
+    padding: 0.5em 0.8em;
+    font-family: "Alice";
+    font-size: 22px;
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fafafa
+}
+
+#side-menu.active {
+    visibility: visible;
+    width: 20vw;
+    opacity: 1;
+}
+
+#side-menu-items ul {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-links {
+    text-decoration: none;
+    position: relative;
+    color: #fafafa;
+}
+
+.info-links:hover {
+    box-shadow: 5px 11px 10px 0px rgba(0, 0, 0, 0.644);
+    transform: translateY(-2px);
+    border-radius: 10px;
+}

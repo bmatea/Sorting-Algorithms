@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Sorting Algorithms</title>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/stil.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alice|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="flex-container">
+                <h2>Sorting Algorithms</h2>
+                <nav>
+                    <a class="nav-links" href="#">Home</a>
+                    <a class="nav-links" href="#alg-section">Agorithms</a>
+                    <a class="nav-links" href="#kontakt">Contact</a>
+                    <a class="nav-links" href="#">
+                        <i class="fas fa-info nav-links"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="cover">
+            <img src="./slike/background.jpg" alt="Background image" />
+            <div id="cover-text" class="container">
+                <h1>Sorting algorithms</h1>
+                <small>Find out more!</small>
+            </div>
+        </section>
+
+        <section id="alg-section" class="selection-box">
+            <h2 class="section-title">Algorithms</h2>
+            <nav id="alg-selection">
+                <a id="bubble" class="nav-links" href="#">Bubble Sort</a>
+                <a id="selection" class="nav-links" href="#">Selection Sort</a>
+                <a id="insertion" class="nav-links" href="#">Insertion Sort</a>
+                <a id="merge" class="nav-links" href="#">Merge Sort</a>
+                <a id="quick" class="nav-links" href="#">Quick Sort</a>
+                <a id="heap" class="nav-links" href="#">Heap Sort</a>
+            </nav>
+            <span class="title-underline"></span>
+            <div id="alg-container" class="container">
+                <article class="one-alg-box">
+                    <!--tu ide slika -->
+                </article>
+                <h2 class="name-label"></h2>
+                <p class="alg-name"></p>
+                <h2 class="complexity-label"></h2>
+                <p class="complexity"></p>
+                <h2 class="desc-label"></h2>
+                <p class="alg-description">
+
+                </p>
+
+            </div>
+        </section>
+        <section id="kontakt" class="section-box">
+            <h2 class="section-title">Contact us</h2>
+            <span class="title-underline"></span>
+            <div class="container">
+                <form>
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="mail" placeholder="Email" required />
+                    <label for="naslov">Title</label>
+                    <input type="text" name="subject" id="naslov" placeholder="Message title" required />
+                    <label for="poruka">Message</label>
+                    <textarea id="poruka" name="message" cols="8" rows="4" placeholder="Enter Your message..." required></textarea>
+                    <button type="submit" class="pizza-button">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-box">
+                <ul id="social-media-list">
+                    <li title="Facebook">
+                        <a class="social-media-links" href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li title="Instagram">
+                        <a class="social-media-links" href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li title="Email">
+                        <a class="social-media-links" href="mailto:myemail@fesb.hr">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+                <h4>Sorting Algorithms</h4>
+                <p id="copyright">
+                    &copy;
+                    <em> 2019. All rights reserved</em>
+                    <br />
+                    <strong>T.M.M.</strong>
+                </p>
+            </div>
+        </footer>
+        <div id="side-menu">
+            <div id="side-menu-items">
+                <p>
+                    For more information about sorting algorithms and help with visualising them, we suggest visiting some of the following links:
+                </p>
+                <ul>
+                    <a class="info-links" href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html" target="_blank">www.cs.cmu.edu</a>
+                    <a class="info-links" href="https://visualgo.net/bn/sorting" target="_blank">visualgo.net</a>
+                    <a class="info-links" href="https://math.hws.edu/eck/js/sorting/xSortLab.html" target="_blank">math.hws.edu</a>
+                    <a class="info-links" href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">www.toptal.com</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
