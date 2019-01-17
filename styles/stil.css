@@ -257,3 +257,7 @@ button:hover {
     transform: translateY(-2px);
     border-radius: 10px;
 }
+
+#screenshot {
+    width: 60vw;
+}
